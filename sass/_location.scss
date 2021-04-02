@@ -1,0 +1,18 @@
+.location{
+  padding: 0.10rem 0;
+  background-color: map-get($gray-shades, medium); 
+  &--address{
+    text-align: center;
+  &--icon{
+     color:map-get($gray-shades, dark);
+     font-size: 1.3rem;
+     margin-right: 1rem;
+    }
+   &--city{
+     color: map-get($gray-shades, dark);
+     font-size: 1.2rem;
+    }
+  }
+  
+
+}

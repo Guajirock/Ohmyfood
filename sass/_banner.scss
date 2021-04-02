@@ -1,0 +1,22 @@
+.banner{
+  text-align: center;
+  background-color: map-get($gray-shades, light);
+
+  &--title{
+    padding-top: 2rem;
+    font-weight: map-get($font-weights, bold );
+    margin: 0;
+  
+  }
+  &--subtitle{
+    font-weight:map-get($font-weights, thin)
+  }
+  &--bannerbutton{
+   color: $white;
+   background-image: linear-gradient(180deg, $secondary, $primary);
+   padding: 1rem;
+   border-radius: 1.25rem;
+   border-style: none;
+   margin-bottom: 2rem;
+  }
+}

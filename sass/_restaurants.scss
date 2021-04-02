@@ -1,0 +1,9 @@
+.restaurants {
+
+
+  & h2 {
+    padding: 2rem 0 0 3rem; 
+    font-weight: map-get($font-weights , bold);
+    margin: 0;
+  } 
+}

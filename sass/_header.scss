@@ -1,0 +1,15 @@
+
+.tophead{
+border-bottom: 1px solid lightgray;
+background: $white;
+position:fixed;
+top: 0;
+width: 100%;
+box-shadow: 0 0 10px 0 rgba($color: $black, $alpha: 0.55);
+
+  &--logo{
+    font-family: 'Shrikhand', cursive;
+    font-size: 2rem;
+    text-align: center;
+  }
+} 
