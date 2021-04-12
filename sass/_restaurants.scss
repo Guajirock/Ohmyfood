@@ -1,9 +1,63 @@
 .restaurants {
-
+  padding: 1rem 1rem 1rem 1.35rem;
 
   & h2 {
-    padding: 2rem 0 0 3rem; 
-    font-weight: map-get($font-weights , bold);
-    margin: 0;
-  } 
+    margin-left: 2rem;
+  }
+  &--options {
+    list-style: none;
+  }
+  &--card {
+    display: flex;
+flex-direction: column;
+    box-shadow: 0 5px  15px 0 rgba($color: $black, $alpha: 0.25);
+    border-radius: 15px;
+    text-decoration: none;
+    color: $black;
+    margin-bottom: 2.5rem;
+    
+    &--image {
+      & img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+      }
+    }
+    &--name {
+      padding: 0.75em 0 0 1rem;
+      margin: 0;
+    }
+    &--city {
+      padding: 0.35rem 0 0 1rem;
+      margin: 0;
+      font-weight: map-get($font-weights, thin );
+    }
+    &--newtag{
+      right:2rem;
+      position: absolute;
+      padding: 0.4rem 1.5rem;
+      background-color: $tertiary;
+      color:$greenvariant;
+      border-radius: 0.25rem;
+      font-size: 0.90rem;
+    }
+    &--heart {
+     
+      &--outline {
+        display: none;
+      left: 20rem;
+      font-size: 2rem;
+
+      
+      }
+      &-solid {
+        position: absolute;
+        left:2rem;
+        left: 20rem;
+      font-size: 2rem;
+       
+      }
+  
+    }
+  }
 }

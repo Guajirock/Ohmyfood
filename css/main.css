@@ -70,7 +70,7 @@ template { display: none; }
 [hidden] { display: none; }
 
 /* Color Base*/
-body { margin-top: 5rem; font-family: "Roboto", sans-serif; }
+body { margin-top: 5rem; font-family: "Roboto", sans-serif; color: #000000; }
 
 /* structure */
 .tophead { border-bottom: 1px solid lightgray; background: #ffffff; position: fixed; top: 0; width: 100%; -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.55); box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.55); }
@@ -103,5 +103,23 @@ body { margin-top: 5rem; font-family: "Roboto", sans-serif; }
 
 .instructions .selector-button--button-icon { font-size: 1.15rem; margin-left: 0.75rem; margin-right: 1.25rem; }
 
-.restaurants h2 { padding: 2rem 0 0 3rem; font-weight: 700; margin: 0; }
+.restaurants { padding: 1rem 1rem 1rem 1.35rem; }
+
+.restaurants h2 { margin-left: 2rem; }
+
+.restaurants--options { list-style: none; }
+
+.restaurants--card { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25); box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25); border-radius: 15px; text-decoration: none; color: #000000; margin-bottom: 2.5rem; }
+
+.restaurants--card--image img { width: 100%; -o-object-fit: cover; object-fit: cover; border-radius: 15px 15px 0 0; }
+
+.restaurants--card--name { padding: 0.75em 0 0 1rem; margin: 0; }
+
+.restaurants--card--city { padding: 0.35rem 0 0 1rem; margin: 0; font-weight: 100; }
+
+.restaurants--card--newtag { right: 2rem; position: absolute; padding: 0.4rem 1.5rem; background-color: #99e2d0; color: #0b6d54; border-radius: 0.25rem; font-size: 0.90rem; }
+
+.restaurants--card--heart--outline { display: none; left: 20rem; font-size: 2rem; }
+
+.restaurants--card--heart-solid { position: absolute; left: 2rem; left: 20rem; font-size: 2rem; }
 /*# sourceMappingURL=main.css.map */
