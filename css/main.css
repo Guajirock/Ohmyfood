@@ -73,7 +73,7 @@ template { display: none; }
 body { margin-top: 5rem; font-family: "Roboto", sans-serif; color: #000000; }
 
 /* structure */
-.tophead { border-bottom: 1px solid lightgray; background: #ffffff; position: fixed; top: 0; width: 100%; -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.55); box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.55); }
+.tophead { border-bottom: 1px solid lightgray; background: #ffffff; top: 0; width: 100%; -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.55); box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.55); }
 
 .tophead--logo { font-family: 'Shrikhand', cursive; font-size: 2rem; text-align: center; }
 
@@ -109,7 +109,7 @@ body { margin-top: 5rem; font-family: "Roboto", sans-serif; color: #000000; }
 
 .restaurants--options { list-style: none; }
 
-.restaurants--card { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25); box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25); border-radius: 15px; text-decoration: none; color: #000000; margin-bottom: 2.5rem; }
+.restaurants--card { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; position: relative; -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25); box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25); border-radius: 15px; text-decoration: none; color: #000000; margin-bottom: 2.5rem; }
 
 .restaurants--card--image img { width: 100%; -o-object-fit: cover; object-fit: cover; border-radius: 15px 15px 0 0; }
 
@@ -119,7 +119,9 @@ body { margin-top: 5rem; font-family: "Roboto", sans-serif; color: #000000; }
 
 .restaurants--card--newtag { right: 2rem; position: absolute; padding: 0.4rem 1.5rem; background-color: #99e2d0; color: #0b6d54; border-radius: 0.25rem; font-size: 0.90rem; }
 
-.restaurants--card--heart--outline { display: none; left: 20rem; font-size: 2rem; }
+.restaurants--card--heart { position: absolute; right: 2rem; bottom: 1rem; }
 
-.restaurants--card--heart-solid { position: absolute; left: 2rem; left: 20rem; font-size: 2rem; }
+.restaurants--card--heart--outline { display: none; font-size: 2rem; }
+
+.restaurants--card--heart-solid { background: -webkit-linear-gradient(#9356dc, #ff79da); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-size: 2rem; }
 /*# sourceMappingURL=main.css.map */
