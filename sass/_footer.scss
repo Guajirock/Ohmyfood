@@ -1,0 +1,27 @@
+footer {
+    background-color: map-get($gray-shades, dark);
+    color: $white;
+  
+    & h3 {
+      font-family: "Shrikhand", cursive;
+      padding: 1rem 0 0.5rem 2.5rem;
+      margin: 0;
+    }
+  
+    & nav {
+      padding: 0 0 2rem 0;
+      & ul {
+          list-style: none;
+          margin: 0;
+  
+        & li {
+          list-style: none;
+          padding: 0.75em 0 0 0;
+  
+          & span {
+            margin-right: 0.5rem;
+          }
+        }
+      }
+    }
+  }

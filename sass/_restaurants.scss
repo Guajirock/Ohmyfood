@@ -18,10 +18,14 @@
     margin-bottom: 2.5rem;
     
     &--image {
+      
+     
       & img {
         width: 100%;
         object-fit: cover;
         border-radius: 15px 15px 0 0;
+        height: 12rem;
+        object-position: -50% 0;
       }
     }
     &--name {
@@ -30,7 +34,7 @@
     }
     &--city {
       padding: 0.35rem 0 0 1rem;
-      margin: 0;
+      margin: 0 0 1rem 0;
       font-weight: map-get($font-weights, thin );
     }
     &--newtag{
@@ -43,23 +47,36 @@
       font-size: 0.90rem;
     }
     &--heart {
-     position: absolute;
-     right: 2rem;
-     bottom: 1rem;
+      position: absolute;
+      right: 2rem;
+      bottom: 1rem;
+      z-index: 5;
+     
+      &:hover{
+      
+        & .restaurants--card--heart--outline {
+          opacity: 0;
+        }
+        & .restaurants--card--heart--solid {
+          opacity: 1;
+          transition: opacity 1s;
+        }
+     }
 
       &--outline {
-        display: none;
-  
-      font-size: 2rem;
-
-      
+        opacity: 1;
+        font-size: 2rem;
+        color: map-get($gray-shades, medium);
       }
-      &-solid {
+      &--solid {
+        opacity: 0;
        background: -webkit-linear-gradient($primary,$secondary);
        -webkit-background-clip: text;
        -webkit-text-fill-color: transparent;
        background-clip: text;
        font-size: 2rem;
+       transition: opacity 1s;
+       
       }
   
     }
