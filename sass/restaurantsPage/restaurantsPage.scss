@@ -1,0 +1,23 @@
+@import "../normalize"; 
+@import "../variables";
+@import "../mixins";
+@import "../base";
+
+body{
+    position:relative;
+}
+.background{
+    img{
+        width: 100%;
+    }
+}
+
+.menu{
+    box-sizing: border-box;
+    background:map-get($gray-shades, light);
+    border-radius: 2rem 2rem 0 0;
+    position: absolute;
+    top: 15rem;
+    width: 100%;
+    padding: 1rem;
+}

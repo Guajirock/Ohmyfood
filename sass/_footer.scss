@@ -14,11 +14,13 @@ footer {
           list-style: none;
           margin: 0;
   
-        & li {
-          list-style: none;
+         li {
           padding: 0.75em 0 0 0;
-  
-          & span {
+          a{
+            text-decoration: none;
+            color:$white;
+          }
+           span {
             margin-right: 0.5rem;
           }
         }
