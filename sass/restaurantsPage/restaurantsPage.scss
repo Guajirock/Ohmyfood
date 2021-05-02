@@ -1,23 +1,75 @@
-@import "../normalize"; 
+@import "../normalize";
 @import "../variables";
 @import "../mixins";
 @import "../base";
 
-body{
-    position:relative;
+body {
+  position: relative;
 }
-.background{
-    img{
-        width: 100%;
+.tophead {
+  display: flex;
+  justify-content: center;
+  nav {
+    width: 10vw;
+    padding-left: 0.75rem;
+    padding-top: 0.5rem;
+    box-sizing: border-box;
+
+    a {
+      display: inline-block;
+
+      i {
+        color: map-get($gray-shades, dark);
+        font-size: 1.25rem;
+      }
     }
+  }
+  .tophead--logo {
+    width: 90vw;
+    padding-right: 2rem;
+  }
+}
+.background {
+  img {
+    width: 100%;
+  }
 }
 
-.menu{
-    box-sizing: border-box;
-    background:map-get($gray-shades, light);
-    border-radius: 2rem 2rem 0 0;
-    position: absolute;
-    top: 15rem;
-    width: 100%;
-    padding: 1rem;
+.menu {
+  box-sizing: border-box;
+  background: map-get($gray-shades, light);
+  border-radius: 2rem 2rem 0 0;
+  position: absolute;
+  top: 15rem;
+  width: 100%;
+  padding: 1rem;
+
+  &--title {
+    position: relative;
+    h2{
+        font-family: 'Shrikhand',cursive;
+    }
+
+    .restaurants--card--heart {
+      position: absolute;
+      top: -0.25rem;
+      margin: 0;
+      right: 0.5rem;
+    }
+  }
+  
+  .dishes{
+
+    &--header{
+        
+        h3{
+            
+        }
+
+    }
+      
+  }
+
+ 
+
 }

@@ -333,6 +333,37 @@ body {
   position: relative;
 }
 
+.tophead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tophead nav {
+  width: 10vw;
+  padding-left: 0.75rem;
+  padding-top: 0.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.tophead nav a {
+  display: inline-block;
+}
+
+.tophead nav a i {
+  color: #444444;
+  font-size: 1.25rem;
+}
+
+.tophead .tophead--logo {
+  width: 90vw;
+  padding-right: 2rem;
+}
+
 .background img {
   width: 100%;
 }
@@ -346,5 +377,20 @@ body {
   top: 15rem;
   width: 100%;
   padding: 1rem;
+}
+
+.menu--title {
+  position: relative;
+}
+
+.menu--title h2 {
+  font-family: 'Shrikhand',cursive;
+}
+
+.menu--title .restaurants--card--heart {
+  position: absolute;
+  top: -0.25rem;
+  margin: 0;
+  right: 0.5rem;
 }
 /*# sourceMappingURL=restaurantsPage.css.map */
