@@ -378,7 +378,7 @@ body {
 }
 
 .dishes--header hr {
-  height: .25rem;
+  height: 0.25rem;
   width: 3rem;
   background-color: #99e2d0;
   border-style: none;
@@ -469,7 +469,12 @@ body {
   color: #ffffff;
 }
 
-.menu footer {
-  margin: 0;
+.menu .order {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=restaurantsPage.css.map */
