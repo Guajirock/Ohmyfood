@@ -38,7 +38,7 @@ body {
   padding: 0 1rem 0.5rem 1rem;
   &--header {
     h2 {
-      font-weight: map-get($font-weights, regular);
+      font-weight: map-get($font-weights, thin);
       font-size: large;
     }
     hr {
@@ -87,12 +87,13 @@ body {
 
     &--description {
       width: 70%;
-      font-weight: map-get($font-weights, regular);
+      
+      
 
       &--title {
         margin: 0;
         padding-bottom: 0.5rem;
-        font-weight: normal;
+        font-weight: map-get($font-weights, bold);
       }
       p {
         margin: 0;
@@ -101,6 +102,7 @@ body {
         width: 14rem;
         overflow: hidden;
         text-overflow: ellipsis;
+        font-weight: map-get($font-weights, thin);
       }
     }
     &--price {

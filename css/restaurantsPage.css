@@ -373,7 +373,7 @@ body {
 }
 
 .dishes--header h2 {
-  font-weight: 400;
+  font-weight: 100;
   font-size: large;
 }
 
@@ -429,13 +429,12 @@ body {
 
 .menu--card--description {
   width: 70%;
-  font-weight: 400;
 }
 
 .menu--card--description--title {
   margin: 0;
   padding-bottom: 0.5rem;
-  font-weight: normal;
+  font-weight: 700;
 }
 
 .menu--card--description p {
@@ -445,6 +444,7 @@ body {
   width: 14rem;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-weight: 100;
 }
 
 .menu--card--price {
