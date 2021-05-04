@@ -532,6 +532,7 @@ body .lds-roller div:nth-child(8):after {
 footer {
   background-color: #444444;
   color: #ffffff;
+  width: 100%;
 }
 
 footer h3 {

@@ -1,29 +1,29 @@
 footer {
-    background-color: map-get($gray-shades, dark);
-    color: $white;
-  
-    & h3 {
-      font-family: "Shrikhand", cursive;
-      padding: 1rem 0 0.5rem 2.5rem;
+  background-color: map-get($gray-shades, dark);
+  color: $white;
+  width: 100%;
+  & h3 {
+    font-family: "Shrikhand", cursive;
+    padding: 1rem 0 0.5rem 2.5rem;
+    margin: 0;
+  }
+
+  & nav {
+    padding: 0 0 2rem 0;
+    & ul {
+      list-style: none;
       margin: 0;
-    }
-  
-    & nav {
-      padding: 0 0 2rem 0;
-      & ul {
-          list-style: none;
-          margin: 0;
-  
-         li {
-          padding: 0.75em 0 0 0;
-          a{
-            text-decoration: none;
-            color:$white;
-          }
-           span {
-            margin-right: 0.5rem;
-          }
+
+      li {
+        padding: 0.75em 0 0 0;
+        a {
+          text-decoration: none;
+          color: $white;
+        }
+        span {
+          margin-right: 0.5rem;
         }
       }
     }
   }
+}

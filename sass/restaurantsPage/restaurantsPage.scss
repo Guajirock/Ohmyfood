@@ -35,16 +35,25 @@ body {
   }
 }
 .dishes {
-    &--header {
-        h2{
-            font-weight: map-get($font-weights, thin);
-            font-size: medium;
-            padding-left: .25rem;
-            border-bottom: 3px solid $tertiary;
-        }
-      
+  
+  padding: 0 1rem 0.5rem 1rem;
+  &--header {
+    
+    h2 {
+      font-weight: map-get($font-weights, regular);
+      font-size: large;
+    }
+    hr {
+    height: .25rem;
+    width: 3rem;
+    background-color: $tertiary;
+    border-style: none;
+    margin: 0 16rem 1rem 0 ;
+    padding: 0;
+
     }
   }
+}
 
 .menu {
   box-sizing: border-box;
@@ -53,23 +62,22 @@ body {
   position: absolute;
   top: 15rem;
   width: 100%;
-  padding: 1rem;
 
   &--title {
     position: relative;
     h2 {
       font-family: "Shrikhand", cursive;
+      padding-left: 1rem;
     }
 
     .restaurants--card--heart {
       position: absolute;
       top: -0.25rem;
       margin: 0;
-      right: 0.5rem;
+      right: 1.5rem;
     }
   }
 
-  
   &--card {
     display: flex;
     overflow: hidden;
@@ -77,35 +85,36 @@ body {
     border-radius: 14px;
     margin-bottom: 1rem;
     box-sizing: border-box;
-    padding: .5rem 0 .5rem .5rem;
-    box-shadow: 0 5px 10px rgba($color: $black, $alpha: .25);
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    box-shadow: 0 5px 10px rgba($color: $black, $alpha: 0.25);
 
     &--description {
       width: 70%;
-      font-weight: map-get($font-weights, thin);
+      font-weight: map-get($font-weights, regular);
 
       &--title {
         margin: 0;
         padding-bottom: 0.5rem;
         font-weight: normal;
       }
-       p {
-          margin: 0;
-          padding-bottom: .25rem;
-
+      p {
+        margin: 0;
+        padding-bottom: 0.25rem;
+        white-space: nowrap;
+        width: 14rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
     }
     &--price {
       width: 30%;
-      padding-bottom: .25rem;
+      padding-bottom: 0.25rem;
       text-align: center;
-
       justify-content: center;
       align-self: flex-end;
       font-weight: map-get($font-weights, medium);
     }
     &--checkmark {
-      /* visibility: hidden;*/
       display: none;
       background-color: lightskyblue;
       width: 15%;
@@ -114,5 +123,12 @@ body {
         color: $white;
       }
     }
+  }
+
+  .banner--bannerbutton {
+    
+  }
+  footer{
+    margin: 0;
   }
 }

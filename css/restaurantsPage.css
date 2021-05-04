@@ -368,11 +368,22 @@ body {
   width: 100%;
 }
 
+.dishes {
+  padding: 0 1rem 0.5rem 1rem;
+}
+
 .dishes--header h2 {
-  font-weight: 100;
-  font-size: medium;
-  padding-left: .25rem;
-  border-bottom: 3px solid #99e2d0;
+  font-weight: 400;
+  font-size: large;
+}
+
+.dishes--header hr {
+  height: .25rem;
+  width: 3rem;
+  background-color: #99e2d0;
+  border-style: none;
+  margin: 0 16rem 1rem 0;
+  padding: 0;
 }
 
 .menu {
@@ -383,7 +394,6 @@ body {
   position: absolute;
   top: 15rem;
   width: 100%;
-  padding: 1rem;
 }
 
 .menu--title {
@@ -392,13 +402,14 @@ body {
 
 .menu--title h2 {
   font-family: "Shrikhand", cursive;
+  padding-left: 1rem;
 }
 
 .menu--title .restaurants--card--heart {
   position: absolute;
   top: -0.25rem;
   margin: 0;
-  right: 0.5rem;
+  right: 1.5rem;
 }
 
 .menu--card {
@@ -411,14 +422,14 @@ body {
   margin-bottom: 1rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: .5rem 0 .5rem .5rem;
+  padding: 0.5rem 0 0.5rem 0.5rem;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
 
 .menu--card--description {
   width: 70%;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 .menu--card--description--title {
@@ -429,12 +440,16 @@ body {
 
 .menu--card--description p {
   margin: 0;
-  padding-bottom: .25rem;
+  padding-bottom: 0.25rem;
+  white-space: nowrap;
+  width: 14rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .menu--card--price {
   width: 30%;
-  padding-bottom: .25rem;
+  padding-bottom: 0.25rem;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -445,7 +460,6 @@ body {
 }
 
 .menu--card--checkmark {
-  /* visibility: hidden;*/
   display: none;
   background-color: lightskyblue;
   width: 15%;
@@ -453,5 +467,9 @@ body {
 
 .menu--card--checkmark span {
   color: #ffffff;
+}
+
+.menu footer {
+  margin: 0;
 }
 /*# sourceMappingURL=restaurantsPage.css.map */
