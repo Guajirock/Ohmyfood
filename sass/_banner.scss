@@ -14,11 +14,12 @@
   &--bannerbutton{
    color: $white;
    background-image: linear-gradient(180deg, $secondary, $primary);
-   padding: 1rem;
+   padding: 1rem 3rem;
    border-radius: 1.25rem;
    border-style: none;
    margin-bottom: 2rem;
    cursor: pointer;
+  
    &:hover{
     background-image: linear-gradient(180deg, rgba($secondary, 0.8), $primary);
     box-shadow: 0 10px 10px rgba($color: #000000, $alpha: 0.2);

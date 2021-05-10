@@ -36,6 +36,9 @@ body {
 }
 .dishes {
   padding: 0 1rem 0.5rem 1rem;
+  animation: card-slider 3s;
+  opacity: 1;
+
   &--header {
     h2 {
       font-weight: map-get($font-weights, thin);
@@ -59,7 +62,7 @@ body {
   position: absolute;
   top: 15rem;
   width: 100%;
-
+  
   &--title {
     position: relative;
     h2 {
@@ -84,11 +87,15 @@ body {
     box-sizing: border-box;
     padding: 0.5rem 0 0.5rem 0.5rem;
     box-shadow: 0 5px 10px rgba($color: $black, $alpha: 0.25);
+    animation: card-slider 3s;
+    opacity: 1;
+
+    
+  
+   
 
     &--description {
       width: 70%;
-      
-      
 
       &--title {
         margin: 0;
@@ -123,8 +130,35 @@ body {
       }
     }
   }
+  @keyframes card-slider {
+    0%{
+      opacity: 0;
+      transform: translateY(5rem);
+    }
+    100%{
+      opacity: 1;
+      transform: translateY(0);
+    } 
+  }
   .order {
     justify-content: center;
     display: flex;
+
+   .bannerbutton {
+      color: $white;
+      background-image: linear-gradient(180deg, $secondary, $primary);
+      padding: 1rem 3.25rem;
+      border-radius: 1.25rem;
+      border-style: none;
+      margin-bottom: 2rem;
+      cursor: pointer;
+      &:hover {
+        background-image: linear-gradient(
+          180deg,
+          rgba($secondary, 0.8),
+          $primary);
+        box-shadow: 0 10px 10px rgba($color: #000000, $alpha: 0.2);
+      }
+    }
   }
 }
