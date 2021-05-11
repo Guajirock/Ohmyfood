@@ -30,10 +30,13 @@ body {
   }
 }
 .background {
+  
 
   img {
     width: 100%;
-    
+    object-fit: cover;
+    height: 20rem;
+    object-position: 20% 305 ;
   }
 }
 .dishes {
@@ -97,19 +100,22 @@ body {
       flex: none;
       width: 75%;
       transition: width 500ms ease-in-out;
-      overflow: hidden;
       white-space: nowrap;
+      /*overflow: hidden;
+      
+      text-overflow: ellipsis;*/
 
       &--title {
         margin: 0;
         padding: .75rem .5rem;
         font-weight: map-get($font-weights, bold);
+        overflow: visible;
       }
       p {
+        width: 100%;
         margin: 0;
         padding: 0  0 .5rem .5rem;
         white-space: nowrap;
-        width: 14rem;
         overflow: hidden;
         text-overflow: ellipsis;
         font-weight: map-get($font-weights, thin);
@@ -123,11 +129,11 @@ body {
       justify-content: center;
       align-self: flex-end;
       font-weight: map-get($font-weights, medium);
-      background: none;
+      background-color: transparent;
     }
     &--checkmark {
       display: flex;
-      flex: none;
+      flex: none; 
       background-color: $tertiary;
       width: 24%;
       justify-content: center;

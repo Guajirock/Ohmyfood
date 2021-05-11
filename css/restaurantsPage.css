@@ -366,6 +366,11 @@ body {
 
 .background img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 20rem;
+  -o-object-position: 20% 305;
+     object-position: 20% 305;
 }
 
 .dishes {
@@ -441,21 +446,24 @@ body {
   width: 75%;
   -webkit-transition: width 500ms ease-in-out;
   transition: width 500ms ease-in-out;
-  overflow: hidden;
   white-space: nowrap;
+  /*overflow: hidden;
+      
+      text-overflow: ellipsis;*/
 }
 
 .menu--card--description--title {
   margin: 0;
   padding: .75rem .5rem;
   font-weight: 700;
+  overflow: visible;
 }
 
 .menu--card--description p {
+  width: 100%;
   margin: 0;
   padding: 0  0 .5rem .5rem;
   white-space: nowrap;
-  width: 14rem;
   overflow: hidden;
   text-overflow: ellipsis;
   font-weight: 100;
@@ -474,7 +482,7 @@ body {
   -ms-flex-item-align: end;
       align-self: flex-end;
   font-weight: 500;
-  background: none;
+  background-color: transparent;
 }
 
 .menu--card--checkmark {
