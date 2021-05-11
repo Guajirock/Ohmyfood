@@ -470,8 +470,8 @@ body .lds-roller div:nth-child(8):after {
      object-fit: cover;
   border-radius: 15px 15px 0 0;
   height: 12rem;
-  -o-object-position: -50% 0;
-     object-position: -50% 0;
+  -o-object-position: 50% 60%;
+     object-position: 50% 60%;
 }
 
 .restaurants--card--name {

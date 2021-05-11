@@ -30,8 +30,10 @@ body {
   }
 }
 .background {
+
   img {
     width: 100%;
+    
   }
 }
 .dishes {
@@ -62,7 +64,7 @@ body {
   position: absolute;
   top: 15rem;
   width: 100%;
-  
+
   &--title {
     position: relative;
     h2 {
@@ -85,26 +87,27 @@ body {
     border-radius: 14px;
     margin-bottom: 1rem;
     box-sizing: border-box;
-    padding: 0.5rem 0 0.5rem 0.5rem;
+    /*padding: 0.5rem 0 0.5rem 0.5rem;*/
     box-shadow: 0 5px 10px rgba($color: $black, $alpha: 0.25);
     animation: card-slider 3s;
     opacity: 1;
-
-    
-  
-   
+    cursor: pointer;
 
     &--description {
-      width: 70%;
+      flex: none;
+      width: 75%;
+      transition: width 500ms ease-in-out;
+      overflow: hidden;
+      white-space: nowrap;
 
       &--title {
         margin: 0;
-        padding-bottom: 0.5rem;
+        padding: .75rem .5rem;
         font-weight: map-get($font-weights, bold);
       }
       p {
         margin: 0;
-        padding-bottom: 0.25rem;
+        padding: 0  0 .5rem .5rem;
         white-space: nowrap;
         width: 14rem;
         overflow: hidden;
@@ -113,52 +116,104 @@ body {
       }
     }
     &--price {
+      flex: none;
       width: 30%;
       padding-bottom: 0.25rem;
       text-align: center;
       justify-content: center;
       align-self: flex-end;
       font-weight: map-get($font-weights, medium);
+      background: none;
     }
     &--checkmark {
-      display: none;
-      background-color: lightskyblue;
-      width: 15%;
+      display: flex;
+      flex: none;
+      background-color: $tertiary;
+      width: 24%;
+      justify-content: center;
+      align-items: center;
 
       & span {
         color: $white;
+        animation: clockwise 1000ms ease-in-out forwards;
+        font-size: xx-large;
       }
     }
   }
+  .menu--card:hover .menu--card--description {
+    width: 50%;
+    transition: width 500ms ease-in-out;
+  }
+
+  .menu--card:hover .menu--card--checkmark span {
+    animation: counter-clock 1000ms ease-in-out forwards;
+  }
+
+  .menu--card:hover p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .bannerbutton {
+    color: $white;
+    background-image: linear-gradient(180deg, $secondary, $primary);
+    padding: 1rem 3.25rem;
+    border-radius: 1.25rem;
+    border-style: none;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    &:hover {
+      background-image: linear-gradient(
+        180deg,
+        rgba($secondary, 0.8),
+        $primary
+      );
+      box-shadow: 0 10px 10px rgba($color: #000000, $alpha: 0.2);
+    }
+  }
+
+  @keyframes clockwise {
+    0% {
+      transform: rotate(0turn);
+      color: white;
+    }
+
+    25% {
+      transform: rotate(-1turn);
+    }
+
+    50% {
+      transform: rotate(1turn);
+    }
+
+    100% {
+      transform: rotate(2turn);
+    }
+  }
+
+  @keyframes counter-clock {
+    0% {
+      transform: rotate(0turn);
+    }
+
+    100% {
+      transform: rotate(-2turn);
+    }
+  }
   @keyframes card-slider {
-    0%{
+    0% {
       opacity: 0;
       transform: translateY(5rem);
     }
-    100%{
+    100% {
       opacity: 1;
       transform: translateY(0);
-    } 
+    }
   }
   .order {
     justify-content: center;
     display: flex;
 
-   .bannerbutton {
-      color: $white;
-      background-image: linear-gradient(180deg, $secondary, $primary);
-      padding: 1rem 3.25rem;
-      border-radius: 1.25rem;
-      border-style: none;
-      margin-bottom: 2rem;
-      cursor: pointer;
-      &:hover {
-        background-image: linear-gradient(
-          180deg,
-          rgba($secondary, 0.8),
-          $primary);
-        box-shadow: 0 10px 10px rgba($color: #000000, $alpha: 0.2);
-      }
-    }
+    
   }
 }

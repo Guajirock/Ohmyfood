@@ -425,27 +425,35 @@ body {
   margin-bottom: 1rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0.5rem 0 0.5rem 0.5rem;
+  /*padding: 0.5rem 0 0.5rem 0.5rem;*/
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
   -webkit-animation: card-slider 3s;
           animation: card-slider 3s;
   opacity: 1;
+  cursor: pointer;
 }
 
 .menu--card--description {
-  width: 70%;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 75%;
+  -webkit-transition: width 500ms ease-in-out;
+  transition: width 500ms ease-in-out;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .menu--card--description--title {
   margin: 0;
-  padding-bottom: 0.5rem;
+  padding: .75rem .5rem;
   font-weight: 700;
 }
 
 .menu--card--description p {
   margin: 0;
-  padding-bottom: 0.25rem;
+  padding: 0  0 .5rem .5rem;
   white-space: nowrap;
   width: 14rem;
   overflow: hidden;
@@ -454,6 +462,9 @@ body {
 }
 
 .menu--card--price {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
   width: 30%;
   padding-bottom: 0.25rem;
   text-align: center;
@@ -463,16 +474,128 @@ body {
   -ms-flex-item-align: end;
       align-self: flex-end;
   font-weight: 500;
+  background: none;
 }
 
 .menu--card--checkmark {
-  display: none;
-  background-color: lightskyblue;
-  width: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  background-color: #99e2d0;
+  width: 24%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu--card--checkmark span {
   color: #ffffff;
+  -webkit-animation: clockwise 1000ms ease-in-out forwards;
+          animation: clockwise 1000ms ease-in-out forwards;
+  font-size: xx-large;
+}
+
+.menu .menu--card:hover .menu--card--description {
+  width: 50%;
+  -webkit-transition: width 500ms ease-in-out;
+  transition: width 500ms ease-in-out;
+}
+
+.menu .menu--card:hover .menu--card--checkmark span {
+  -webkit-animation: counter-clock 1000ms ease-in-out forwards;
+          animation: counter-clock 1000ms ease-in-out forwards;
+}
+
+.menu .menu--card:hover p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.menu .bannerbutton {
+  color: #ffffff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background-image: linear-gradient(180deg, #ff79da, #9356dc);
+  padding: 1rem 3.25rem;
+  border-radius: 1.25rem;
+  border-style: none;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.menu .bannerbutton:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 121, 218, 0.8)), to(#9356dc));
+  background-image: linear-gradient(180deg, rgba(255, 121, 218, 0.8), #9356dc);
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+@-webkit-keyframes clockwise {
+  0% {
+    -webkit-transform: rotate(0turn);
+            transform: rotate(0turn);
+    color: white;
+  }
+  25% {
+    -webkit-transform: rotate(-1turn);
+            transform: rotate(-1turn);
+  }
+  50% {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+  100% {
+    -webkit-transform: rotate(2turn);
+            transform: rotate(2turn);
+  }
+}
+
+@keyframes clockwise {
+  0% {
+    -webkit-transform: rotate(0turn);
+            transform: rotate(0turn);
+    color: white;
+  }
+  25% {
+    -webkit-transform: rotate(-1turn);
+            transform: rotate(-1turn);
+  }
+  50% {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+  100% {
+    -webkit-transform: rotate(2turn);
+            transform: rotate(2turn);
+  }
+}
+
+@-webkit-keyframes counter-clock {
+  0% {
+    -webkit-transform: rotate(0turn);
+            transform: rotate(0turn);
+  }
+  100% {
+    -webkit-transform: rotate(-2turn);
+            transform: rotate(-2turn);
+  }
+}
+
+@keyframes counter-clock {
+  0% {
+    -webkit-transform: rotate(0turn);
+            transform: rotate(0turn);
+  }
+  100% {
+    -webkit-transform: rotate(-2turn);
+            transform: rotate(-2turn);
+  }
 }
 
 @-webkit-keyframes card-slider {
@@ -508,23 +631,5 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.menu .order .bannerbutton {
-  color: #ffffff;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-  background-image: linear-gradient(180deg, #ff79da, #9356dc);
-  padding: 1rem 3.25rem;
-  border-radius: 1.25rem;
-  border-style: none;
-  margin-bottom: 2rem;
-  cursor: pointer;
-}
-
-.menu .order .bannerbutton:hover {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 121, 218, 0.8)), to(#9356dc));
-  background-image: linear-gradient(180deg, rgba(255, 121, 218, 0.8), #9356dc);
-  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 /*# sourceMappingURL=restaurantsPage.css.map */
