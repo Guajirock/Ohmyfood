@@ -168,10 +168,10 @@ template {
 body {
   font-family: "Roboto", sans-serif;
   color: #000000;
+  /* Color Base*/
 }
 
 body .loader {
-  /* Color Base*/
   display: block;
   opacity: 1;
   position: absolute;
@@ -368,9 +368,9 @@ body {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 20rem;
-  -o-object-position: 20% 305;
-     object-position: 20% 305;
+  height: 17.20rem;
+  -o-object-position: 40% 80%;
+     object-position: 40% 80%;
 }
 
 .dishes {
@@ -400,7 +400,7 @@ body {
   background: #f2f2f2;
   border-radius: 2rem 2rem 0 0;
   position: absolute;
-  top: 15rem;
+  top: 20rem;
   width: 100%;
 }
 
@@ -411,6 +411,12 @@ body {
 .menu--title h2 {
   font-family: "Shrikhand", cursive;
   padding-left: 1rem;
+}
+
+@media (max-width: 320px) {
+  .menu--title h2 {
+    font-size: 1.25rem;
+  }
 }
 
 .menu--title .restaurants--card--heart {
@@ -640,4 +646,4 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
-/*# sourceMappingURL=restaurantsPage.css.map */
+/*# sourceMappingURL=allpages.css.map */
