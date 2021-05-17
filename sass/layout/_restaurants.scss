@@ -16,6 +16,14 @@
       font-size: 2.25rem;
       padding-left: 35rem;
     }
+    @include breakpoint(medium) {
+      font-size:1.5rem;
+      padding-left: 18rem;
+    }
+    @include breakpoint(large) {
+      font-size:2rem;
+      padding-left: 25rem;
+    }
   }
   &--options {
     list-style: none;
