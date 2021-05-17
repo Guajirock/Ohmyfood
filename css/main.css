@@ -456,7 +456,7 @@ body .lds-roller div:nth-child(8):after {
 
 @media (min-width: 1360px) {
   .instructions {
-    margin: 0 23rem;
+    margin: 0 25rem;
     width: 40%;
   }
 }
