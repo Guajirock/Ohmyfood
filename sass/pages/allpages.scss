@@ -35,8 +35,11 @@ body {
   img {
     width: 100%;
     object-fit: cover;
-    height: 17.20rem;
+    height: 20rem;
     object-position: 40% 80%;
+    @include breakpoint(medium) {
+      height: 25rem;
+    }
   }
 }
 .dishes {
@@ -67,15 +70,18 @@ body {
   position: absolute;
   top: 20rem;
   width: 100%;
+  @include breakpoint(medium) {
+    top: 25rem;
+  }
 
   &--title {
     position: relative;
     h2 {
       font-family: "Shrikhand", cursive;
       padding-left: 1rem;
-     @include breakpoint (small){
-       font-size: 1.25rem;
-     }
+      @include breakpoint (small){
+        font-size: 1.25rem;
+      }
     }
 
     .restaurants--card--heart {
@@ -104,15 +110,16 @@ body {
       width: 75%;
       transition: width 500ms ease-in-out;
       white-space: nowrap;
-      /*overflow: hidden;
       
-      text-overflow: ellipsis;*/
-
       &--title {
         margin: 0;
         padding: .75rem .5rem;
         font-weight: map-get($font-weights, bold);
         overflow: visible;
+        @include breakpoint (small){
+          font-size: .9rem;
+        }
+        
       }
       p {
         width: 100%;

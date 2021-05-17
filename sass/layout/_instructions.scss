@@ -1,8 +1,29 @@
 .instructions{
   padding: 1rem 1rem 1rem 1.35rem;
+  @include breakpoint(medium) {
+    margin:0 14rem;
+    width:40%;
+  }
+  @include breakpoint(large) {
+    margin:0 18rem;
+    width:40%;
+  }
+  @include breakpoint(huge) {
+    margin:0 23rem;
+    width:40%;
+  }
 
   &--title{
     padding-left: 1rem;
+    @include breakpoint(medium) {
+      font-size: 1.5rem;
+      padding-left: 4rem;
+    }
+    @include breakpoint(large) {
+      font-size: 2rem;
+      padding-left: 7rem;
+    }
+
   }
   .selector-button{
    display: flex;

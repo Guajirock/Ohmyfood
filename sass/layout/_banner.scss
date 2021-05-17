@@ -6,10 +6,22 @@
     padding-top: 2rem;
     font-weight: map-get($font-weights, bold );
     margin: 0;
+    @include breakpoint(medium) {
+      font-size: 1.75rem;
+    }
+    @include breakpoint(large) {
+      font-size: 2rem;
+    }
   
   }
   &--subtitle{
-    font-weight:map-get($font-weights, thin)
+    font-weight:map-get($font-weights, thin);
+    @include breakpoint(medium) {
+      font-size: 1.25rem;
+    }
+    @include breakpoint(large) {
+      font-size: 1.75rem;
+    }
   }
   &--bannerbutton{
    color: $white;

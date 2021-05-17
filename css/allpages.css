@@ -368,9 +368,15 @@ body {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 17.20rem;
+  height: 20rem;
   -o-object-position: 40% 80%;
      object-position: 40% 80%;
+}
+
+@media (min-width: 768px) {
+  .background img {
+    height: 25rem;
+  }
 }
 
 .dishes {
@@ -402,6 +408,12 @@ body {
   position: absolute;
   top: 20rem;
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  .menu {
+    top: 25rem;
+  }
 }
 
 .menu--title {
@@ -453,9 +465,6 @@ body {
   -webkit-transition: width 500ms ease-in-out;
   transition: width 500ms ease-in-out;
   white-space: nowrap;
-  /*overflow: hidden;
-      
-      text-overflow: ellipsis;*/
 }
 
 .menu--card--description--title {
@@ -463,6 +472,12 @@ body {
   padding: .75rem .5rem;
   font-weight: 700;
   overflow: visible;
+}
+
+@media (max-width: 320px) {
+  .menu--card--description--title {
+    font-size: .9rem;
+  }
 }
 
 .menu--card--description p {

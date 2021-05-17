@@ -347,6 +347,18 @@ body .lds-roller div:nth-child(8):after {
   margin: 0;
 }
 
+@media (min-width: 768px) {
+  .tophead--logo {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .tophead--logo {
+    font-size: 3.75rem;
+  }
+}
+
 .location {
   padding: 0.10rem 0;
   background-color: #e2e2e2;
@@ -378,8 +390,32 @@ body .lds-roller div:nth-child(8):after {
   margin: 0;
 }
 
+@media (min-width: 768px) {
+  .banner--title {
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .banner--title {
+    font-size: 2rem;
+  }
+}
+
 .banner--subtitle {
   font-weight: 100;
+}
+
+@media (min-width: 768px) {
+  .banner--subtitle {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .banner--subtitle {
+    font-size: 1.75rem;
+  }
 }
 
 .banner--bannerbutton {
@@ -404,8 +440,43 @@ body .lds-roller div:nth-child(8):after {
   padding: 1rem 1rem 1rem 1.35rem;
 }
 
+@media (min-width: 768px) {
+  .instructions {
+    margin: 0 14rem;
+    width: 40%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .instructions {
+    margin: 0 18rem;
+    width: 40%;
+  }
+}
+
+@media (min-width: 1360px) {
+  .instructions {
+    margin: 0 23rem;
+    width: 40%;
+  }
+}
+
 .instructions--title {
   padding-left: 1rem;
+}
+
+@media (min-width: 768px) {
+  .instructions--title {
+    font-size: 1.5rem;
+    padding-left: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .instructions--title {
+    font-size: 2rem;
+    padding-left: 7rem;
+  }
 }
 
 .instructions .selector-button {
@@ -450,11 +521,13 @@ body .lds-roller div:nth-child(8):after {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
 .restaurants h2 {
-  margin-left: 2rem;
+  padding-left: 1em;
 }
 
 .restaurants--options {
