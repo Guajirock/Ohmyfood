@@ -482,7 +482,7 @@ body .lds-roller div:nth-child(8):after {
 @media (min-width: 1360px) {
   .instructions--title {
     font-size: 2rem;
-    padding-left: 10rem;
+    padding-left: 7rem;
   }
 }
 
