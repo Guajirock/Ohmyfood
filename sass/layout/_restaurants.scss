@@ -14,15 +14,18 @@
     padding-left: 1em;
     @include breakpoint(huge) {
       font-size: 2.25rem;
-      padding-left: 35rem;
+     text-align: center;
+     padding: 0;
     }
     @include breakpoint(medium) {
       font-size:1.5rem;
-      padding-left: 18rem;
+     text-align: center;
+     padding: 0;
     }
     @include breakpoint(large) {
       font-size:2rem;
-      padding-left: 25rem;
+      text-align: center;padding:0;
+      
     }
   }
   &--options {

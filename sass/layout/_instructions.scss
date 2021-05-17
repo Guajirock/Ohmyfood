@@ -1,15 +1,15 @@
 .instructions{
   padding: 1rem 1rem 1rem 1.35rem;
   @include breakpoint(medium) {
-    margin:0 14rem;
+    margin:0 auto;
     width:40%;
   }
   @include breakpoint(large) {
-    margin:0 18rem;
+    margin:0 auto;
     width:40%;
   }
   @include breakpoint(huge) {
-    margin:0 25rem;
+    margin:0 auto;
     width:40%;
   }
 
@@ -17,15 +17,19 @@
     padding-left: 1rem;
     @include breakpoint(medium) {
       font-size: 1.5rem;
-      padding-left: 4rem;
+      text-align: center;
     }
     @include breakpoint(large) {
       font-size: 2rem;
-      padding-left: 6rem;
+      text-align: center;
     }
     @include breakpoint(huge) {
       font-size: 2rem;
+<<<<<<< HEAD
       padding-left: 7rem;
+=======
+      text-align: center;
+>>>>>>> c105adde2c394e980d00ca0bf0dafefdd2d05ead
     }
 
   }
