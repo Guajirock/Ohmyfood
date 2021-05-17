@@ -12,6 +12,10 @@
 
   & h2 {
     padding-left: 1em;
+    @include breakpoint(huge) {
+      font-size: 2.25rem;
+      padding-left: 35rem;
+    }
   }
   &--options {
     list-style: none;

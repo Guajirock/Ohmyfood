@@ -479,6 +479,13 @@ body .lds-roller div:nth-child(8):after {
   }
 }
 
+@media (min-width: 1024px) {
+  .instructions--title {
+    font-size: 2rem;
+    padding-left: 10rem;
+  }
+}
+
 .instructions .selector-button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -528,6 +535,13 @@ body .lds-roller div:nth-child(8):after {
 
 .restaurants h2 {
   padding-left: 1em;
+}
+
+@media (min-width: 1360px) {
+  .restaurants h2 {
+    font-size: 2.25rem;
+    padding-left: 35rem;
+  }
 }
 
 .restaurants--options {
