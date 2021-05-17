@@ -6,19 +6,32 @@
     padding-top: 2rem;
     font-weight: map-get($font-weights, bold );
     margin: 0;
+    @include breakpoint(medium) {
+      font-size: 1.75rem;
+    }
+    @include breakpoint(large) {
+      font-size: 2rem;
+    }
   
   }
   &--subtitle{
-    font-weight:map-get($font-weights, thin)
+    font-weight:map-get($font-weights, thin);
+    @include breakpoint(medium) {
+      font-size: 1.25rem;
+    }
+    @include breakpoint(large) {
+      font-size: 1.75rem;
+    }
   }
   &--bannerbutton{
    color: $white;
    background-image: linear-gradient(180deg, $secondary, $primary);
-   padding: 1rem;
+   padding: 1rem 3rem;
    border-radius: 1.25rem;
    border-style: none;
    margin-bottom: 2rem;
    cursor: pointer;
+  
    &:hover{
     background-image: linear-gradient(180deg, rgba($secondary, 0.8), $primary);
     box-shadow: 0 10px 10px rgba($color: #000000, $alpha: 0.2);

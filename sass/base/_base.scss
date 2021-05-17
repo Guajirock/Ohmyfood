@@ -4,5 +4,5 @@
 body{
   font-family: "Roboto", sans-serif;
   color:$black;
-  @import "loader";
+  @import "./../components/loader";
 }

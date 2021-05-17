@@ -1,15 +1,15 @@
-@import "normalize"; 
-@import "variables";
-@import "mixins";
-@import "base";
+@import "./abstract/normalize"; 
+@import "./abstract/variables";
+@import "./abstract/mixins";
+@import "./base/base";
 /* structure */
 
-@import "header"; 
-@import "location";
-@import "banner";
-@import "instructions";
-@import "restaurants";
-@import "footer";
+@import "./layout/header"; 
+@import "./layout/location";
+@import "./layout/banner";
+@import "./layout/instructions";
+@import "./layout/restaurants";
+@import "./layout/footer"; 
 
 
 
