@@ -45,11 +45,8 @@ body {
   background: map-get($gray-shades, light);
   border-radius: 2rem 2rem 0 0;
   position: absolute;
-  top: 20rem;
+  top: 22rem;
   width: 100%;
-  @include breakpoint(medium) {
-    top: 25rem;
-  }
   @include breakpoint(large) {
     display: flex;
     flex-wrap: wrap;
@@ -71,6 +68,12 @@ body {
       @include breakpoint(small) {
         font-size: 1.25rem;
       }
+      @include breakpoint(large) {
+        padding-left: 2rem;
+      }
+      @include breakpoint(huge) {
+        padding-left: 5.7rem;
+      }
     }
 
     .restaurants--card--heart {
@@ -81,9 +84,12 @@ body {
     }
     @include breakpoint(large) {
       width: 100%;
+      top: 1.2em;
     }
     @include breakpoint(huge) {
       width: 100%;
+      top: 2rem;
+      margin-right: 4rem;
     }
   }
 
@@ -113,6 +119,12 @@ body {
         @include breakpoint(small) {
           font-size: 0.9rem;
         }
+        @include breakpoint(large) {
+          font-size: 0.9rem;
+        }
+        @include breakpoint(huge) {
+          font-size: 0.9rem;
+        }
       }
       p {
         width: 100%;
@@ -122,6 +134,13 @@ body {
         overflow: hidden;
         text-overflow: ellipsis;
         font-weight: map-get($font-weights, thin);
+
+        @include breakpoint(large) {
+          top: 0.75rem; 
+        }
+        @include breakpoint(huge) {
+          top: 0.75rem;
+        }
       }
     }
     &--price {
@@ -225,7 +244,7 @@ body {
     @include breakpoint(large) {
       width: 100%;
     }
-   @include breakpoint(huge) {
+    @include breakpoint(huge) {
       width: 100%;
     }
   }
@@ -249,25 +268,28 @@ body {
       padding: 0;
     }
   }
-
 }
 @include breakpoint(large) {
   .dishes {
-    &:nth-child(1){
+    &:nth-child(1) {
       width: 30%;
     }
-    &:nth-child(2){
+    &:nth-child(2) {
       width: 30%;
     }
-    &:nth-child(3){
+    &:nth-child(3) {
       width: 30%;
     }
   }
 }
 @include breakpoint(huge) {
   .dishes {
-    &:nth-child(1),
-    &:nth-child(2),
+    &:nth-child(1) {
+      width: 30%;
+    }
+    &:nth-child(2) {
+      width: 30%;
+    }
     &:nth-child(3) {
       width: 30%;
     }

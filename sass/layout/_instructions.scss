@@ -25,11 +25,9 @@
     }
     @include breakpoint(huge) {
       font-size: 2rem;
-<<<<<<< HEAD
-      padding-left: 7rem;
-=======
+      padding: 0;
       text-align: center;
->>>>>>> c105adde2c394e980d00ca0bf0dafefdd2d05ead
+      
     }
 
   }
