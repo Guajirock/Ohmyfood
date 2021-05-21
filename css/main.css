@@ -172,21 +172,64 @@ body {
 }
 
 body .loader {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   opacity: 1;
   position: absolute;
-  top: 50%;
-  left: 35%;
+  height: 100vh;
+  width: 100vw;
   z-index: 1;
   -webkit-animation: hideloader 5s both;
           animation: hideloader 5s both;
+  -webkit-transform: translate(-4rem, -4rem);
+          transform: translate(-4rem, -4rem);
+  /* @include breakpoint(medium) {
+    transform: translate(-4rem, -4rem);
+  }*/
+  /*@include breakpoint(large) {
+    transform: translateX(-3rem); 
+  }
+  @include breakpoint(huge) {
+    transform: translateX(-3rem); 
+  }*/
 }
 
 body .lds-roller {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
   display: inline-block;
   position: relative;
-  width: 80px;
-  height: 800px;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+@media (min-width: 768px) {
+  body .lds-roller {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
+@media (min-width: 1024px) {
+  body .lds-roller {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
+@media (min-width: 1360px) {
+  body .lds-roller {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
 }
 
 body .lds-roller div {
@@ -316,6 +359,7 @@ body .lds-roller div:nth-child(8):after {
   100% {
     opacity: 0;
     display: none;
+    z-index: -100;
   }
 }
 
@@ -326,6 +370,7 @@ body .lds-roller div:nth-child(8):after {
   100% {
     opacity: 0;
     display: none;
+    z-index: -100;
   }
 }
 

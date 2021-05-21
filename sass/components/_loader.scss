@@ -2,21 +2,43 @@
 @import "./../abstract/variables";
 
 .loader{
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   opacity: 1;
   position: absolute;
-  top:50%;
-  left: 35%;
+  height: 100vh;
+  width: 100vw;
   z-index: 1;
-
   animation: hideloader 5s both;
+  transform: translate(-4rem, -4rem);
+
+ /* @include breakpoint(medium) {
+    transform: translate(-4rem, -4rem);
+  }*/
+  /*@include breakpoint(large) {
+    transform: translateX(-3rem); 
+  }
+  @include breakpoint(huge) {
+    transform: translateX(-3rem); 
+  }*/
 }
 
   .lds-roller {
+    flex: none;
     display: inline-block;
     position: relative;
-    width: 80px;
-    height: 800px;
+    transform: scale(1.5);
+    @include breakpoint(medium) {
+      transform: scale(1.5); 
+    }
+    @include breakpoint(large) {
+      transform: scale(1.5);
+    }
+    @include breakpoint(huge) {
+      transform: scale(1.5);
+    }
+    
   }
   .lds-roller div {
     animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
@@ -104,6 +126,7 @@
     100% { 
     opacity: 0;
     display: none;
+    z-index: -100;
     
     }
   }
