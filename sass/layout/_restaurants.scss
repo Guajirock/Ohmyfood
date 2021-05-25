@@ -14,18 +14,18 @@
     padding-left: 1em;
     @include breakpoint(huge) {
       font-size: 2.25rem;
-     text-align: center;
-     padding: 0;
+      text-align: center;
+      padding: 0;
     }
     @include breakpoint(medium) {
-      font-size:1.5rem;
-     text-align: center;
-     padding: 0;
+      font-size: 1.5rem;
+      text-align: center;
+      padding: 0;
     }
     @include breakpoint(large) {
-      font-size:2rem;
-      text-align: center;padding:0;
-      
+      font-size: 2rem;
+      text-align: center;
+      padding: 0;
     }
   }
   &--options {
@@ -97,11 +97,11 @@
       &--solid {
         opacity: 0;
         background: -webkit-linear-gradient($primary, $secondary);
-        -webkit-background-clip: text;
+       -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        background-clip: text;
+       /* background-clip: text;*/
         font-size: 2rem;
-        transition: opacity 1s;
+        transition: opacity 1s; 
       }
     }
   }

@@ -694,7 +694,7 @@ body .lds-roller div:nth-child(8):after {
   background: -webkit-linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
+  /* background-clip: text;*/
   font-size: 2rem;
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
